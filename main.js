@@ -10,7 +10,7 @@ if (match) {
   prize = prize.replace(currency, '')
 }
 
-prize = Number(prize)
+prize = Number(prize) // Converts string to number
 newprize = prize * 0.9
 
-console.log(`New prize after 10% discount: ${currency}${newprize}`)
+console.log(`New prize after 10% discount: ${currency}${newprize.toFixed(2)}`)
